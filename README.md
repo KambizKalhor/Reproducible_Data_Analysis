@@ -1,5 +1,5 @@
 # Reproducible_Data_Analysis
-Fall Semester 2023 Course: "Adventures in [Course Subject]" 🎉
+Fall Semester 2023 Course: Reproducible_Data_Analysis 🎉
 
 Level: Graduate 🎓
 
