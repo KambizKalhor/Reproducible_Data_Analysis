@@ -4,15 +4,13 @@ Install the GitHub Pull Requests and Issues extension on VScode
 
 <img width="640" alt="banner" src="https://github.com/KambizKalhor/Reproducible_Data_Analysis/blob/main/working%20with%20github/Working%20with%20GitHub%20in%20VS%20Code/Screenshot_2023-08-28_at_12.41.44.png">
 
-![Screenshot 2023-08-28 at 12.41.44.png](working with github/Working with GitHub in VS Code/Screenshot_2023-08-28_at_12.41.44.png)
-
 ### [Cloning a repository](https://code.visualstudio.com/docs/sourcecontrol/github#_cloning-a-repository)
 
 You can search for and clone a repository from GitHub using the **Git: Clone** command in the Command Palette (⇧⌘P) or by using the **Clone Repository** button in the Source Control view (available when you have no folder open).
 
 From the GitHub repository dropdown you can filter and pick the repository you want to clone locally.
 
-![Image 8-28-23 at 12.51.jpg](working with github/Working with GitHub in VS Code/Image_8-28-23_at_12.51.jpg)
+<img width="640" alt="banner" src="https://github.com/KambizKalhor/Reproducible_Data_Analysis/blob/main/working%20with%20github/Working%20with%20GitHub%20in%20VS%20Code/Image_8-28-23_at_12.51.jpg">
 
 # Basic Commands you need
 
