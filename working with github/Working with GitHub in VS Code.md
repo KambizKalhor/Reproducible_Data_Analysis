@@ -2,6 +2,8 @@
 
 Install the GitHub Pull Requests and Issues extension on VScode
 
+<img width="640" alt="banner" src="https://github.com/KambizKalhor/Reproducible_Data_Analysis/blob/main/working%20with%20github/Working%20with%20GitHub%20in%20VS%20Code/Screenshot_2023-08-28_at_12.41.44.png">
+
 ![Screenshot 2023-08-28 at 12.41.44.png](working with github/Working with GitHub in VS Code/Screenshot_2023-08-28_at_12.41.44.png)
 
 ### [Cloning a repository](https://code.visualstudio.com/docs/sourcecontrol/github#_cloning-a-repository)
