@@ -178,6 +178,8 @@ but how could you prevent them from appearing in the first place?
 
 > the \`echo = FALSE\` parameter can be added to the code chunk to
 > prevent printing the R code that generated the plots and so on.
+>
+> {r, error = FALSE} also can be added to hide errors
 
 # Question 3: adding columns
 

@@ -13,7 +13,7 @@ Remember that any package needs to be installed only once (per version of R), bu
 
 To install `nyclflights13`, use `install.packages("nycflights13")` (with quotation marks). To load it, use `library(nycflights13)`.
 
-```{r}
+```{r, error = FALSE}
 # install.packages('nycflights13')
 # install.packages("tidyverse")
 library(tidyverse)
@@ -71,7 +71,7 @@ Make a plot of air time as a function of distance (air time on the y axis, dista
 
     ```
 
-## now Let's plot using all  the criteria above together
+## now Let's plot using all the criteria above together
 
 ```{r}
 # all the criteria above together
@@ -103,6 +103,8 @@ glimpse(clean_flights)
 `ggplot()` will automatically remove NA values from the plot, as you may have seen in question 1, but it emits a warning message about that. Of course you could silence the warning message using [chunk options](https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html), but how could you prevent them from appearing in the first place?
 
 > the \`echo = FALSE\` parameter can be added to the code chunk to prevent printing the R code that generated the plots and so on.
+>
+> {r, error = FALSE} also can be added to hide errors
 
 # Question 3: adding columns
 
@@ -157,7 +159,7 @@ let's test this hypothesis
 
 if there is a delay in flight, the plane driver will drive faster?
 
-answer: \
+answer:\
 No, if there is a delay in a flight, the pilot does not drive the plane faster. In fact, pilots do not "drive" planes; they fly them. :)
 
 Airplanes have specific speed limits and performance parameters that must be adhered to for safety, and pilots are trained to operate within these limits.
