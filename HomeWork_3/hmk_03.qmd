@@ -1,7 +1,6 @@
 ---
 title: "Homework 03"
 format: gfm
-editor: visual
 ---
 
 # Base R and R Basics
@@ -116,11 +115,3 @@ library(tidyverse)
     ANSWER: you can apply it in different levels and see the diference.
 
     when you apply aesthetic on global level it means it's gonna change the entire plot, or it's same in all geoms, but if you apply it on specific geom level, it means it's specific to a particular data layer.
-
-    # to convert qmd to md
-
-```{r}
-library(quarto)
-quarto_render("/Users/kami/my_GitHub_Repository/Reproducible_Data_Science/hmk_03.qmd", output_format = "md")
-
-```
