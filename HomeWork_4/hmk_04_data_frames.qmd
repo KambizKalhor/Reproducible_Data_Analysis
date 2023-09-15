@@ -1,0 +1,171 @@
+---
+title: "Hmk_04: Data frames and data wrangling"
+format: gfm
+---
+
+Please read the entire [R for Data Science](https://r4ds.hadley.nz/data-transform) before you do this homework.
+
+This homework relies on the `nycflights13` package, which contains several data frames, including `airlines`, `airports`, `flights`, `planes`, and `weather`. Loading `nycflights13` (`library(nycflights13)`) puts all of these data frames on the search path.
+
+## Installing data packages
+
+Remember that any package needs to be installed only once (per version of R), but needs to be loaded every time we start a new R session.
+
+To install `nyclflights13`, use `install.packages("nycflights13")` (with quotation marks). To load it, use `library(nycflights13)`.
+
+```{r}
+# install.packages('nycflights13')
+# install.packages("tidyverse")
+library(tidyverse)
+library(nycflights13)
+glimpse(flights)
+```
+
+# Question 1: filtering
+
+Make a plot of air time as a function of distance (air time on the y axis, distance on the x axis) for all flights that meet the following criteria:
+
+```{r}
+# we can first remove NA here but i chose to NOT do that at first
+# clean_flights = na.omit(flights)
+```
+
+-   originate from LaGuardia airport ("LGA")
+
+    ```{r}
+    # filter all rows with LGA as origin
+    # why i used select first and than removed NA --> because i just want to remove rows without the distance or air_time data, and other NA in other properties can stay
+    originate_LGA = filter(flights, origin == 'LGA') |> select(distance, air_time) |> na.omit()
+    # glimpse(originate_LGA)
+    # plotting
+    ggplot(originate_LGA, aes(x = distance, y = air_time)) +
+      geom_point() +
+      labs(x = "Distance", y = "Air Time") +
+      ggtitle("Air Time VS Distance")
+
+    ```
+
+-   departed on the 16th of the month
+
+    ```{r}
+    depart_on_D16 = filter(flights, day == 16) |> select(distance, air_time) |> na.omit()
+    # glimpse(depart_on_D16)
+    # plotting
+    ggplot(depart_on_D16, aes(x = distance, y = air_time)) +
+      geom_point() +
+      labs(x = "Distance", y = "Air Time") +
+      ggtitle("Air Time VS Distance")
+
+    ```
+
+-   have a flight distance of less than 2000
+
+    ```{r}
+    distance_less_than_2000 = filter(flights, distance <= 2000) |> select(distance, air_time) |> na.omit()
+    # glimpse(distance_less_than_2000)
+    # plotting
+    ggplot(distance_less_than_2000, aes(x = distance, y = air_time)) +
+      geom_point() +
+      labs(x = "Distance", y = "Air Time") +
+      ggtitle("Air Time VS Distance")
+
+    ```
+
+## now Let's plot using all  the criteria above together
+
+```{r}
+# all the criteria above together
+
+all_criteria = flights |> filter(origin == 'LGA') |> filter(day == 16) |> filter(distance <= 2000) |> select(distance, air_time) |> na.omit()
+# glimpse(all_criteria)
+# plotting
+ggplot(all_criteria, aes(x = distance, y = air_time)) +
+  geom_point() +
+  labs(x = "Distance", y = "Air Time") +
+  ggtitle("Air Time VS Distance")
+
+
+```
+
+# Question 2: dealing with NAs
+
+Make a data frame of all of the rows of `flights` that have values for *both* `arr_time` and `dep_time` - that is, neither of those values are `NA`.
+
+```{r}
+#remove rows with NA in specific columnr
+clean_flights <- flights[complete.cases(flights[ , c('distance', 'air_time')]), ] 
+glimpse(clean_flights)
+
+```
+
+## filtering NAs
+
+`ggplot()` will automatically remove NA values from the plot, as you may have seen in question 1, but it emits a warning message about that. Of course you could silence the warning message using [chunk options](https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html), but how could you prevent them from appearing in the first place?
+
+> the \`echo = FALSE\` parameter can be added to the code chunk to prevent printing the R code that generated the plots and so on.
+
+# Question 3: adding columns
+
+Create a data frame of average flight speeds, based on `air_time` and `distance`. Make either a histogram or a density plot of the data. If you like, you may break the data out (e.g. by airline, or some other variable) in a way that you think makes sense.
+
+### answer:
+
+since SI is my choice for speed unit, we need to convert units using mutate.
+
+> **Meters per second (m/s)**: This is the SI (International System of Units) unit for speed.
+
+```{r}
+
+# if you want km/min as speed unit
+new_dataframe_1 = clean_flights |> mutate(flight_speed = distance / air_time)
+
+# convert it to m/s
+new_dataframe_2 = new_dataframe_1 |> mutate(flight_speed = (flight_speed /60)*1000)
+
+# American units MPH
+new_dataframe_3 = new_dataframe_1 |> mutate(flight_speed = (flight_speed * 2.23694))
+                                            
+# Airspeed is usually measured in knots nautical miles per hour
+new_dataframe_4 = new_dataframe_1 |> mutate(flight_speed = (flight_speed * 1.94384))
+```
+
+depend on question we can make different groups, for example, which airline has a higher speed airplanes.
+
+```{r}
+carrier_vs_speed = new_dataframe_1 |> group_by(carrier) |> summarise(average_flight_speed = mean(flight_speed))
+# glimpse(carrier_vs_speed)
+
+# plotting
+ggplot(new_dataframe_1, aes(x = carrier, y = flight_speed)) +
+  geom_boxplot() +
+  labs(x = "Carrier", y = "Flight Speed") +
+  ggtitle("Boxplot of Flight Speed by Carrier")+
+  theme_light()
+```
+
+why i made this plot?
+
+to test that if we have long trips, do pilots increase their speed limit?
+
+```{r}
+ggplot(data = new_dataframe_1, aes(x = distance, y = flight_speed)) + 
+    geom_point(aes(colour = carrier))
+
+```
+
+let's test this hypothesis
+
+if there is a delay in flight, the plane driver will drive faster?
+
+answer: \
+No, if there is a delay in a flight, the pilot does not drive the plane faster. In fact, pilots do not "drive" planes; they fly them. :)
+
+Airplanes have specific speed limits and performance parameters that must be adhered to for safety, and pilots are trained to operate within these limits.
+
+```{r}
+glimpse(new_dataframe_1)
+ggplot(data = new_dataframe_1, aes(x = dep_delay, y = flight_speed)) + 
+    geom_point(aes(colour = carrier))+
+    geom_smooth(method = lm)
+
+```
