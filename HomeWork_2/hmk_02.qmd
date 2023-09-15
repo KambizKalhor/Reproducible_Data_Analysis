@@ -1,0 +1,47 @@
+---
+title: "Hmk_02"
+format: gfm
+---
+
+# 1. What were the main issues in the Reinhard and Rogoff issue, and how best could they have been avoided?
+
+there are some issues in their research that could have been avoided including :
+
+1.  Removal of some countries' data and incorrect calculations caused by excel.
+    -   Avoidance : first they should fully know the tools they are using and also use statistical softwares or programming languages which are designed for data analysis, such as R, Python. At last, they should have Quality Control and checkpoint steps.
+2.  No rigorous peer reviews
+    -   Avoidance : They should allowed other experts in the field to review and critique their research before publication which is more important in this case because thier finding has influenced the public policy discussions.
+3.  No data reproducibility.
+    -   Avoidance : Researchers should be open and share all their data and how they did their research with other researchers. This means giving them access to the data they used and explaining where they got it and how they analyzed it in detail so other researchers can replicate the study's results.
+
+# 2. What key attributes make a piece of data analysis "reproducible"? Please put those attributes in a prioritized list (i.e., for you, what is most important, next most important, etc...)
+
+1\. Keeping records
+
+2\. Engage in peer review and collaboration with other researchers.
+
+3\. importance of replication of experiments and studies.
+
+4\. make all data and computer code publicly available at an early stage.
+
+5\. Raising standards on Structuring the analysis code, data files and workflow.
+
+# 3. Imagine that you are doing a piece of data analysis that only you will ever see: perhaps you are shopping for a car and trying to determine what will give you the best value for your money. Should you think about making your data analysis reproducible? Why or why not?
+
+The possibility of conducting reproducible analyses and its level of importance depends on various factors, and they come with both advantages and disadvantages.
+
+### Advantages:
+
+**Error Detection**: Reproducibility can be beneficial for identifying errors in your work.
+
+**Developing a culture of reproducibility within you**: Cultivating a culture of reproducibility can be beneficial for your professional growth.
+
+**Sharing**: While at first your might keep the analysis to yourself, in future you might want to share your findings with a friend, family member, or post it online to help others who are also shopping for cars
+
+**Time Efficiency**: By ensuring reproducibility, you save time in future analyses, and you don't need to start from scratch.
+
+### Disadvantages:
+
+**Context Matters**: Although making your analyses reproducible can facilitate your next decision on buying a car but there are situations where it may not be practical to buy another car base on decisions on outdated data from many years ago.
+
+**Decrease Creativity**: In creative or exploratory analyses, strict reproducibility requirements may stop innovation. Balancing creativity with reproducibility can be a challenging.
