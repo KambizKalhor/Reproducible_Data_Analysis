@@ -105,8 +105,8 @@ library(tidyverse)
 
     ```{r}
     ggplot(data = penguins,
-           mapping = aes(x = flipper_length_mm, y = body_mass_g, color = island)) +
-           geom_point() + geom_smooth(method = 'lm')
+           mapping = aes(x = flipper_length_mm, y = body_mass_g, color = bill_depth_mm)) +
+           geom_point() + geom_smooth()
 
     ```
 
