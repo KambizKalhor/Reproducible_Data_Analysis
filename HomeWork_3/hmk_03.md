@@ -38,7 +38,7 @@ function.
     getwd()
     ```
 
-        [1] "/Users/kami/my_GitHub_Repository/Reproducible_Data_Science"
+        [1] "/Users/kami/my_GitHub_Repository/Reproducible_Data_Science/homework2"
 
     ``` r
     # it's in my GitHub Repository folder
@@ -93,13 +93,13 @@ v1 + v2
 5.  Explain what the following code does. It may be helpful to reference
     the answer to the previous question:
 
-    again it’s not convincing for me when you can write it in more easy
-    to understand form like:
+    We can see vector recycling, when we perform some kind of operations
+    like addition, subtraction, etc. on two vectors of unequal length.
+    The vector with a small length will be repeated as long as the
+    operation completes on the longer vector. again it’s not convincing
+    for me when you can write it in more easy to understand form like:
 
     c(1, 5, 9) + c(3, 3, 3)
-
-    My personal preference is for programming languages that have fewer
-    surprises and fewer rules.
 
 ``` r
 c(1, 5, 9) + 3
@@ -148,13 +148,19 @@ library(tidyverse)
 
     ``` r
     ggplot(data = penguins,
-           mapping = aes(x = flipper_length_mm, y = body_mass_g, color = island)) +
-           geom_point() + geom_smooth(method = 'lm')
+           mapping = aes(x = flipper_length_mm, y = body_mass_g, color = bill_depth_mm)) +
+           geom_point() + geom_smooth()
     ```
 
-        `geom_smooth()` using formula = 'y ~ x'
+        `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 
         Warning: Removed 2 rows containing non-finite values (`stat_smooth()`).
+
+        Warning: The following aesthetics were dropped during statistical transformation: colour
+        ℹ This can happen when ggplot fails to infer the correct grouping structure in
+          the data.
+        ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+          variable into a factor?
 
         Warning: Removed 2 rows containing missing values (`geom_point()`).
 
