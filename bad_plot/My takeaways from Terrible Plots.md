@@ -1,9 +1,9 @@
-![plo2t](bad_plot/1234.png)
+![plo2t](1234.png)
 
 1. Words have the occasional ability to outperform plots
 below is my own bad plot
 
-![plot](bad_plot/12345.png)
+![plot](12345.png)
 
 ---
 ![](https://www.biostat.wisc.edu/~kbroman/topten_worstgraphs/roeder_fig4.jpg)
