@@ -1,7 +1,7 @@
-![[Screenshot 2023-10-05 at 12.46.42.png]]
+![[1234.png]]
 1. Words have the occasional ability to outperform plots
 below is my own bad plot
-![[Screenshot 2023-10-05 at 12.54.00.png]]
+![[12345.png]]
 ---
 ![](https://www.biostat.wisc.edu/~kbroman/topten_worstgraphs/roeder_fig4.jpg)
 #### What's wrong with this one?
