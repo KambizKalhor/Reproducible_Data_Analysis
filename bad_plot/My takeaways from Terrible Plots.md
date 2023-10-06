@@ -1,7 +1,9 @@
-![[1234.png]]
+![[bad_plot/1234.png]]
+
 1. Words have the occasional ability to outperform plots
 below is my own bad plot
-![[12345.png]]
+
+![[bad_plot/12345.png]]
 ---
 ![](https://www.biostat.wisc.edu/~kbroman/topten_worstgraphs/roeder_fig4.jpg)
 #### What's wrong with this one?
