@@ -1,4 +1,4 @@
-![[bad_plot/1234.png]]
+![plo2t](bad_plot/1234.png)
 
 1. Words have the occasional ability to outperform plots
 below is my own bad plot
