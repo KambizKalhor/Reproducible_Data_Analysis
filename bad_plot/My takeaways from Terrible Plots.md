@@ -3,7 +3,8 @@
 1. Words have the occasional ability to outperform plots
 below is my own bad plot
 
-![[bad_plot/12345.png]]
+![plot](bad_plot/12345.png)
+
 ---
 ![](https://www.biostat.wisc.edu/~kbroman/topten_worstgraphs/roeder_fig4.jpg)
 #### What's wrong with this one?
