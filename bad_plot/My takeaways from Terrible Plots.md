@@ -2,7 +2,7 @@
 
 1. Words have the occasional ability to outperform plots
 below is my own bad plot
-
+![plot](123456.png)
 ![plot](12345.png)
 
 ---
@@ -17,8 +17,11 @@ Without a doubt, it's difficult to display multiple curves simultaneously and en
 #### What should have been done?
 Figure 1D could have been discarded completely, and the whole figure shouldn't take up more than half a page.
 
-![[outpu1t.png]]
-![[output.png]]![[altCHI-preprint.pdf]]
+
+![plot](outpu1t.png)
+
+![plot](output.png)
+
 ![too much information on a bubble chart](https://uploads-ssl.webflow.com/61488f4f65be16b5ebbd450b/6216bbbe24466f6c51e69c12_87kXu1UB4eaCyl7vVrrOs0_5yd1aXuNe-HI3fliU-7sLCzYOOB6hDzgQRcQgirS3lingbHROwLEshVy-5R8aNT-GnbtWJhF-fCLqQ7nyHPXcYrpYKStch5HJSzoTD4lLgsf_FWDm.png)
 to much Data
 
