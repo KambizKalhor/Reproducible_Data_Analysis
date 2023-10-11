@@ -1,11 +1,11 @@
 # good plot 1
 
 1. Words have the occasional ability to outperform plots
-> ![colonoscopy](1234.png)
+![colonoscopy](1234.png)
 
 
 ## below is my own bad plot
->![my bad bar plot](123456.png)
+![my bad bar plot](123456.png)
 
 
 ---
