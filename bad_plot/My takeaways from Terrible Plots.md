@@ -48,3 +48,10 @@ Chernoff faces encode data values as features of a human face, but afford only a
 
 
 ![3D Chart](https://www.oldstreetsolutions.com/wp-content/uploads/2021/05/3D-Chart-1024x803.png)
+
+
+
+
+![3D Chart](/home/kkalhor/my_github/Reproducible_Data_Analysis/bad_plot/cc.png)
+
+![3D Chart](/home/kkalhor/my_github/Reproducible_Data_Analysis/bad_plot/good_plot.png)
