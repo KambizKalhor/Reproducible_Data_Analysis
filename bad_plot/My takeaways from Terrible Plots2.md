@@ -39,6 +39,6 @@ And this one made us chuckle. The smallest slice is 56%. And, er, 56% and 42% ad
 
 
 
-![3D Chart](/home/kkalhor/my_github/Reproducible_Data_Analysis/bad_plot/cc.png)
+![3D Chart](cc.png)
 
-![3D Chart](/home/kkalhor/my_github/Reproducible_Data_Analysis/bad_plot/good_plot.png)
+![3D Chart](good_plot.png)
