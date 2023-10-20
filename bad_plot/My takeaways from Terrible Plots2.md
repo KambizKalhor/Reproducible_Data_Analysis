@@ -37,3 +37,8 @@ to much Data
 
 And this one made us chuckle. The smallest slice is 56%. And, er, 56% and 42% add up to 98%.
 
+
+
+![3D Chart](/home/kkalhor/my_github/Reproducible_Data_Analysis/bad_plot/cc.png)
+
+![3D Chart](/home/kkalhor/my_github/Reproducible_Data_Analysis/bad_plot/good_plot.png)
