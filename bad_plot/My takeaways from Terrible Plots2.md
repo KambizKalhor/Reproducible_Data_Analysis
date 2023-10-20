@@ -37,6 +37,20 @@ to much Data
 
 And this one made us chuckle. The smallest slice is 56%. And, er, 56% and 42% add up to 98%.
 
+```
+cc <- fig <- ggplot(merged_data, aes(x=location, y=Total)) + 
+  geom_boxplot() + 
+  geom_point()
+
+fig <- fig+ 
+  geom_line(aes(group=pairs))
+
+print(fig)
+
+ggsave("/Users/kami/my_GitHub_Repository/Reproducible_Data_Science/network/sunbelt2023/data/cc.png",
+       fig ,
+       height = 15, width = 20,units = 'cm', dpi = 300 )
+```
 
 
 ![3D Chart](cc.png)
