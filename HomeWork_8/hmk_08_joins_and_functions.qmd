@@ -1,0 +1,47 @@
+---
+title: "Hmk_08: joins and functions"
+format: gfm
+---
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# install.packages('nycflights13')
+# install.packages("tidyverse")
+library(tidyverse)
+library(nycflights13)
+glimpse(flights)
+```
+
+
+# Joins
+
+1. Imagine you’ve found the top 10 most popular destinations using this code:
+```{r}
+top_dest <- flights |>
+  count(dest, sort = TRUE) |>
+  head(10)
+glimpse(top_dest)
+```
+How can you find all flights to those destinations?
+ANSWER :here we can do this using join function
+```{r}
+select_all_top_dest <- top_dest |>
+  inner_join(flights, by= "dest") |>
+  select(-n)
+glimpse(select_all_top_dest)
+```
+
+2. Write a function to 'rescale' a numeric vector by subtracting the mean of the vector from each element and then dividing each element by the standard deviation.
+```{r}
+
+rescale_numeric_vector <- function(numeric_vector) {
+  mean_value <- mean(numeric_vector)
+  std_deveation <- sd(numeric_vector)
+  output_vector <- (numeric_vector - mean_value) / std_deveation
+  
+  return(output_vector)
+}
+
+# example:
+rescale_numeric_vector(c(1,2,3,4,5))
+```

@@ -1,0 +1,37 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12
+,,,,,,,,,,,,,,,,,,,,,,,,
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,Student's track,Student's year of study,Are you,"Justification/rationale. Was the presenter presenting convincing arguments for the need of the research or a goal for the research? Was is driven by absence of knowledge, a contradiction in the literature, weird observation? If hypotheses were proposed, were the alternatives clearly listed? (5 - highest; 1 - lowest)",Experimental design. Was experimental set-up well presented? Were appropriate positive and negative controls mentioned? (5 - highest; 1 - lowest),"Results. Were the results clearly presented? Were rigorous statistical analyses included and appropriate for the data? Was statistical significance related to biological importance of the results (i.e., some statistically significant results are not important biologically)? Were conclusions drawn from the results sound? (5 - highest; 1 - lowest)",Limitations/alternatives. Were the limitations of the experimental design and/or potential alternative explanations of the results obtained discussed ? Were replicates and/or additional experiments discussed? (5 - highest; 1 - lowest),"Presentation. Was the presentation interesting and informative? Was the presentation well paced (not too slow, not too fast at presenting)? Was the material well presented? Was the question/answer session handled appropriately? (5 - highest; 1 - lowest)","Comments. Please include any specific comments regarding the research project, presentation, etc."
+,,,,,,,,,,,,,,,,,,,,,,,,
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID5""}","{""ImportId"":""QID6""}","{""ImportId"":""QID7""}","{""ImportId"":""QID8""}","{""ImportId"":""QID9""}","{""ImportId"":""QID10""}","{""ImportId"":""QID11""}","{""ImportId"":""QID12""}","{""ImportId"":""QID13_TEXT""}"
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:01,11/11/22 9:02,0,100,18,1,11/11/22 9:02,R_2b14qToYhcmCVFD,,,,,35.9539,-83.9357,anonymous,EN,1,2,4,5,5,4,4,4,
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:02,11/11/22 9:02,0,100,31,1,11/11/22 9:02,R_2eVcizz1gWXK4gd,,,,,35.8974,-83.9425,anonymous,EN,1,2,3,5,5,5,5,5,Great presentation
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:03,11/11/22 9:04,0,100,109,1,11/11/22 9:04,R_2an9FbkidFrt5XL,,,,,35.9452,-83.9435,anonymous,EN,1,2,2,4,3,3,3,5,Be very careful when making conclusions about things.
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:04,11/11/22 9:05,0,100,40,1,11/11/22 9:05,R_3pmcWFhqxUMjcVO,,,,,35.9452,-83.9435,anonymous,EN,1,2,2,4,5,4,4,5,
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:02,11/11/22 9:06,0,100,243,1,11/11/22 9:06,R_A0Pt82aYKPtOpUJ,,,,,35.8697,-83.7462,anonymous,EN,1,2,2,5,5,4,5,5,Great talk
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:14,11/11/22 9:14,8,100,28,1,11/11/22 9:14,R_1QFVNKZ3CQ13hDC,,,,,35.9539,-83.9357,anonymous,EN,1,1,2,4,5,5,5,5,
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:14,11/11/22 9:15,0,100,15,1,11/11/22 9:15,R_UfoJ4sw0i93IFI5,,,,,35.9438,-84.0217,anonymous,EN,1,2,2,5,5,4,5,5,__
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:15,11/11/22 9:16,0,100,33,1,11/11/22 9:16,R_b3f06hZkrTtKdFv,,,,,35.9539,-83.9357,anonymous,EN,1,2,2,2,3,2,5,4,
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:16,11/11/22 9:17,0,100,103,1,11/11/22 9:17,R_OkRzmlC7ulA4irL,,,,,35.8974,-83.9425,anonymous,EN,2,1,2,5,4,5,3,4,
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:19,11/11/22 9:19,0,100,21,1,11/11/22 9:19,R_1DM6DZfTdRdkL1H,,,,,35.9539,-83.9357,anonymous,EN,1,2,3,5,5,5,5,5,
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:19,11/11/22 9:19,0,100,22,1,11/11/22 9:19,R_3KYJ7FXPSQJNdad,,,,,35.9452,-83.9435,anonymous,EN,1,3,2,5,5,5,5,5,'-Awesome job!!!!
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:20,11/11/22 9:21,0,100,81,1,11/11/22 9:21,R_2Vg0A0mIlLu3kNM,,,,,35.9539,-83.9357,anonymous,EN,2,2,2,4,5,5,5,5,Very prepared for the talk. The speaker was confident and the data was easy to follow
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:09,11/11/22 9:22,0,100,790,1,11/11/22 9:22,R_3GBOKzkFYIzF8LZ,,,,,35.9243,-83.9965,anonymous,EN,1,2,2,5,4,3,4,5,What percentage of your total data make sense?
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:22,11/11/22 9:23,0,100,53,1,11/11/22 9:23,R_2D5H2R79WjHJlHy,,,,,35.9539,-83.9357,anonymous,EN,1,3,2,5,5,5,4,5,Your hypotheses are good but I think aliens are a better explanation for your observations. 
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:26,11/11/22 9:27,0,100,40,1,11/11/22 9:27,R_ZwV3tPdkQ6r89YB,,,,,35.9539,-83.9357,anonymous,EN,2,1,1,4,5,5,4,4,
+,,,,,,,,,,,,,,,,,,,,,,,,
+11/11/22 9:29,11/11/22 9:29,0,100,17,1,11/11/22 9:29,R_1jUQtcBxSeEOe2u,,,,,35.8974,-83.9425,anonymous,EN,1,2,2,5,5,5,5,5,
